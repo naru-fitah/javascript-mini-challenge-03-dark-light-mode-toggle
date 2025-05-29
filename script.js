@@ -15,8 +15,8 @@ let toggleButton = document.getElementById("toggle-btn");
 function switchTheme() {
     document.body.classList.toggle("dark-theme");
     if (document.body.classList.contains("dark-theme")) {
-        toggleButton.textContent = "Dark Mode"
-    } else {
         toggleButton.textContent = "Light Mode"
+    } else {
+        toggleButton.textContent = "Dark Mode"
     }
 }
