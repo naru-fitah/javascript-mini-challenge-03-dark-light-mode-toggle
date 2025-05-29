@@ -1,6 +1,22 @@
-let toggleButton = document.getElementById("toggle-btn")
-toggleButton.addEventListener("click", switchTheme)
+// Not opti - is dark mode or not should be the logic to change the state
+// let toggleButton = document.getElementById("toggle-btn")
+// let heading = document.getElementById("heading")
+
+// function switchTheme() {
+//     console.log("Clicked via event listener!");
+//     toggleButton.classList.toggle("dark-mode")
+//     toggleButton.textContent = "Dark Mode"
+//     heading.classList.toggle("dark-mode-heading")
+//     document.body.classList.toggle("dark-mode-body")
+// }
+
+let toggleButton = document.getElementById("toggle-btn");
 
 function switchTheme() {
-    console.log("Clicked via event listener!");
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+        toggleButton.textContent = "Dark Mode"
+    } else {
+        toggleButton.textContent = "Light Mode"
+    }
 }
